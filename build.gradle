@@ -14,10 +14,14 @@ repositories {
 
 dependencies {
 
+	// Spring Boot
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
 	// Swagger
 	implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
+
+	// AWS S3
+	implementation group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: '1.11.837'
 
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
